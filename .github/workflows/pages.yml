@@ -1,3 +1,5 @@
+# 推送到 main 后自动执行：Jekyll 编译 → 上传 Pages artifact → 发布
+# 首次使用需要在仓库 Settings → Pages → Source 里选择 "GitHub Actions"
 name: Build and deploy Jekyll site
 
 on:

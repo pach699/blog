@@ -1,14 +1,24 @@
-# Markdown 个人博客模板
+# 个人博客（Jekyll + GitHub Pages）
 
-这是一个不需要 Node.js、npm 或 React 的 Jekyll 静态博客模板。
+这是一个不需要 Node.js、npm 或 React 的 Jekyll 静态博客，推送到 GitHub 后由 Actions 自动构建并发布。
 
-## 学生开箱步骤
+## 改哪里
 
-1. 打开模板仓库，点击 **Use this template → Create a new repository**。
-2. 填写自己决定的仓库名称和公开/私有可见性。
-3. 创建完成后，进入自己仓库的 **Settings → Pages**，把 Source 设为 **GitHub Actions**。
-4. 等待 `Build and deploy Jekyll site` workflow 完成，再打开 Pages URL。
-5. 修改 `_config.yml` 中的名字，编辑 `index.html` 的项目卡片，并在 `_posts/` 中写自己的 Markdown 文章。
+| 想改的内容 | 文件 |
+| --- | --- |
+| 名字、简介、邮箱、GitHub 链接、头像字母 | `_config.yml` 里的 `author` |
+| 浏览器标签上的标题 | `_config.yml` 里的 `title` |
+| 首页大标题和项目卡片 | `index.html` |
+| 关于页 | `about.md` |
+| 配色和排版 | `assets/style.css` |
+| 文章 | `_posts/YYYY-MM-DD-title.md` |
+
+## 第一次上线
+
+1. 在 GitHub 网页上新建一个仓库（名字随意，例如 `blog`）。
+2. 本地加远程仓库并推送：`git remote add origin <仓库地址>`，再 `git push -u origin main`。
+3. 进入 **Settings → Pages**，把 Source 设为 **GitHub Actions**。
+4. 等待 `Build and deploy Jekyll site` workflow 完成，再打开 Pages 网址。
 
 仓库创建和 Pages 设置也可以让 Agent 操作，但必须先把目标仓库 URL 明确告诉 Agent，并在推送前检查 `git diff`。
 

@@ -1,7 +1,18 @@
-title: 你的名字 · 个人博客
+# ────────────────────────────────────────────────
+# 个人信息：改这一段就能换掉全站的名字、简介和链接
+# 名字要改两处：title（浏览器标签）和 author.name（页面正文）
+# ────────────────────────────────────────────────
+author:
+  name: 你的名字
+  initials: YN                     # 头像占位字母，建议 2 个字或字母
+  bio: 我在这里记录正在学习的东西、做过的小项目，以及一些不想忘记的想法。
+  email: hello@example.com
+  github: https://github.com/your-username
+
+title: 你的名字的个人博客
 description: 一个可以持续写作的个人博客
 lang: zh-CN
-timezone: Asia/Singapore
+timezone: Asia/Shanghai
 markdown: kramdown
 permalink: /posts/:title/
 exclude:
