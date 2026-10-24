@@ -8,7 +8,7 @@ layout: default
     <p class="hero-copy">{{ site.author.bio }}</p>
     <div class="hero-actions">
       <a class="button primary" href="#writing">读读我的文章</a>
-      <a class="button secondary" href="mailto:{{ site.author.email }}">给我发邮件</a>
+      {% if site.author.email and site.author.email != "" %}<a class="button secondary" href="mailto:{{ site.author.email }}">给我发邮件</a>{% endif %}
     </div>
   </div>
   <div class="hero-card" aria-label="头像占位图"><div class="avatar">{{ site.author.initials | default: 'YN' }}</div></div>

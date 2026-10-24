@@ -3,13 +3,13 @@
 # 名字要改两处：title（浏览器标签）和 author.name（页面正文）
 # ────────────────────────────────────────────────
 author:
-  name: 你的名字
-  initials: YN                     # 头像占位字母，建议 2 个字或字母
+  name: pach699
+  initials: P                      # 头像占位字母，建议 2 个字或字母
   bio: 我在这里记录正在学习的东西、做过的小项目，以及一些不想忘记的想法。
-  email: hello@example.com
-  github: https://github.com/your-username
+  email: ""                        # 留空则隐藏所有邮件入口；填上就是 mailto 链接
+  github: https://github.com/pach699
 
-title: 你的名字的个人博客
+title: pach699的个人博客
 description: 一个可以持续写作的个人博客
 lang: zh-CN
 timezone: Asia/Shanghai

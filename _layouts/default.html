@@ -28,6 +28,6 @@
     </div>
   </header>
   <main id="main">{{ content }}</main>
-  <footer class="site-footer"><div class="wrap footer-row"><span>© {{ 'now' | date: '%Y' }} {{ site.author.name | default: site.title }}</span><span class="footer-links"><a href="{{ site.author.github }}">GitHub</a> · <a href="mailto:{{ site.author.email }}">Email</a></span></div></footer>
+  <footer class="site-footer"><div class="wrap footer-row"><span>© {{ 'now' | date: '%Y' }} {{ site.author.name | default: site.title }}</span><span class="footer-links"><a href="{{ site.author.github }}">GitHub</a>{% if site.author.email and site.author.email != "" %} · <a href="mailto:{{ site.author.email }}">Email</a>{% endif %}</span></div></footer>
 </body>
 </html>

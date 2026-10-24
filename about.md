@@ -18,7 +18,7 @@ permalink: /about.html
   <div class="about-note">
     <p>想聊点什么，或者发现文章里有写错的地方，都可以直接找我。</p>
     <ul class="contact-list">
-      <li><span>邮箱</span><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+      {% if site.author.email and site.author.email != "" %}<li><span>邮箱</span><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>{% endif %}
       <li><span>GitHub</span><a href="{{ site.author.github }}">{{ site.author.github | remove: 'https://' }}</a></li>
     </ul>
   </div>
