@@ -13,16 +13,19 @@
 | 配色和排版 | `assets/style.css` |
 | 文章 | `_posts/YYYY-MM-DD-title.md` |
 
-## 第一次上线
+## 已经上线
 
-1. 在 GitHub 网页上新建一个仓库（名字随意，例如 `blog`）。
-2. 本地加远程仓库并推送：`git remote add origin <仓库地址>`，再 `git push -u origin main`。
-3. 进入 **Settings → Pages**，把 Source 设为 **GitHub Actions**。
-4. 等待 `Build and deploy Jekyll site` workflow 完成，再打开 Pages 网址。
+- 仓库：<https://github.com/pach699/blog>
+- 网址：<https://pach699.github.io/blog/>
+- Pages 的 Source 已经是 **GitHub Actions**，推送到 `main` 就会自动重建。
 
-仓库创建和 Pages 设置也可以让 Agent 操作，但必须先把目标仓库 URL 明确告诉 Agent，并在推送前检查 `git diff`。
+## 发布一次更新
 
-注意：仓库里的 `index.html` 是 Jekyll 模板源码，不能靠双击本地文件看到最终页面；最终 HTML 会由 GitHub Actions 生成。学生不需要在电脑上安装 Ruby、Jekyll、Node.js 或 npm。
+1. 改文件（文章放 `_posts/YYYY-MM-DD-title.md`，保留 Front Matter）。
+2. `git add -A`，`git commit -m "..."`，`git push`。
+3. 等 Actions 里的 `Build and deploy Jekyll site` 变绿，刷新网址即可。
+
+注意：仓库里的 `index.html` 是 Jekyll 模板源码，不能靠双击本地文件看到最终页面；最终 HTML 会由 GitHub Actions 生成。
 
 ## 写一篇新文章
 
